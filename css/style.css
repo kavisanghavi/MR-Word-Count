@@ -1,0 +1,216 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #2f2929;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#menu{
+  position: absolute;
+  top:40%;
+  height: 100px;
+  width:100%;
+  text-align: center;
+  padding:20px;
+
+}
+#header{
+  position: absolute;
+  top:30%;
+  height: 100px;
+  width:100%;
+  text-align: center;
+  padding:20px;
+  font-size: 3em;
+  color:white;
+  text-transform: capitalize;
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.4),
+  0px 4px 7px rgba(0,0,0,0.1),
+  0px 9px 12px rgba(0,0,0,0.1);
+
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+
+.switch {
+  background-color: black;
+  width: 50%;
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  left:30%;
+  color:white;
+  text-align: center;
+  margin-top:40px;
+  margin-bottom:40px;
+  padding:5px;
+}
+.switch:before, .switch:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.switch:after {
+  clear: both;
+}
+.switch label {
+  float: left;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'Noto Serif', serif;
+}
+
+.switch label {
+  line-height: 30px;
+}
+
+.switch input[type="radio"] {
+  display: none;
+}
+.switch input[type="radio"]:checked + label {
+  color: white;
+  font-weight: bold;
+}
+.switch span {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background-color: green;
+  transition: all 200ms ease;
+}
+.switch span.right {
+  left: 50%;
+  transition: all 200ms ease;
+  background-color: green;
+  color:white;
+}
+
+.wordcloud{
+  width:80%;
+  margin:0 auto;
+
+}
